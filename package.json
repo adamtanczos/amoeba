@@ -18,12 +18,12 @@
     "@vue/cli-plugin-unit-jest": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
-    "@vue/test-utils": "^2.0.0-0",
+    "@vue/test-utils": "^2.0.0-beta.14",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0-0",
     "typescript": "~3.9.3",
-    "vue-jest": "^5.0.0-0"
+    "vue-jest": "^5.0.0-alpha.7"
   },
   "eslintConfig": {
     "root": true,
@@ -56,9 +56,14 @@
     "not dead"
   ],
   "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
     "preset": "@vue/cli-plugin-unit-jest",
     "transform": {
-      "^.+\\.vue$": "vue-jest"
+      ".*\\.(vue)$": "vue-jest"
     }
   }
 }
