@@ -93,7 +93,7 @@
         font-size: 5rem;
     }
 
-    button:not(:disabled):hover {
+    .box:not(:disabled):hover {
         background-color: #373636;
         cursor: pointer;
     }
